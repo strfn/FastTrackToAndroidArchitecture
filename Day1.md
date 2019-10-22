@@ -43,4 +43,15 @@ key difference is the comunicaition patter.
 - MVP the presenter tell eplicitely set this label to "x" set the button to green ....
 - MVVM the VM just tells the view has to change, the  view goes to the VM and read all the property to re-draw.
 
+# Clean architecture
+arhitecture removed dependency of third party dependencies, the onion (clean) architecture allows to separate business logic/entities form implementaiton details.
 
+## SOLID
+- single responsability 
+- Open close principle: open to extension close to modification 
+- Liskov replacement prinple 
+- Interface segration principles
+- Dependency inversion principle
+
+### Dependency inversion principle
+High level code shuld not depends on low level implementaiton 
