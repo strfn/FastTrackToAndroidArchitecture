@@ -14,3 +14,22 @@
 * Implement the Third User Story: Detail
   * Identity: The need an importance of identity and how to implement it
   * Command pattern: How the command pattern can be helpful and how to use it
+
+
+  ## Clean architecture
+  The entity gateway abstraction allows to build and test the app before the API are ready. is also useful for a POC as i can prove the idea without spending time in persistance and API but if I get the sign off I just need to swap the persiastance.
+  In a secure application always pass a copy never a reference to the entity
+
+  ## Dependency injection
+  - constructor
+  - property
+  - method
+
+  ioc --> don't call me I will call you, the object should provide a method to inject the dependencies.
+
+## Navigation
+  In navigation source activity should not have any reference to the destination activity. The intent should be created in a "companion object method" of the destination, in there is should get the data form the source and extract it from the intent.
+
+  View knows HOW to navigate
+  ViewModel know Where to navigate in abtraction 
+  Connector convert the abstract destination to an actual destination.
